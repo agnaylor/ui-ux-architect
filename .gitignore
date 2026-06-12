@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Build / package outputs
+*.plugin
+dist/
+build/
+
+# Temp files
+*.tmp
+*.tmp.*

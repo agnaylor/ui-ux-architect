@@ -1,0 +1,15 @@
+{
+  "name": "architect-tools",
+  "owner": {
+    "name": "Antonio Naylor"
+  },
+  "plugins": [
+    {
+      "name": "ui-ux-architect",
+      "source": "./",
+      "description": "Multi-identity UI/UX design system. Modern Architect (personal) and Reliance Architecture (firm) identities plus a template for new brands. Five named agents handle critique, component generation, project kickoff, and accessibility auditing.",
+      "category": "design",
+      "tags": ["ui", "ux", "design-system", "react", "accessibility", "aec"]
+    }
+  ]
+}
