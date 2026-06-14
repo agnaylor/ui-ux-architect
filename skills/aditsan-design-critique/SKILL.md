@@ -35,7 +35,7 @@ If no identity is active, ask Adoette to set one before critiquing. The same des
 ## Workflow
 
 ### Step 1 — Identify the Platform
-State which blueprint applies: Dashboard / Mobile-Web / Wiki-Notebook / Desktop-AEC.
+State which blueprint applies: Dashboard / Mobile-Web / Wiki-Notebook / Desktop-AEC / Crisis-Emergency.
 If unclear, ask ONE question and stop.
 
 ### Step 2 — Run the Covenant Pass

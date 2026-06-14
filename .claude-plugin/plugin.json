@@ -1,6 +1,6 @@
 {
   "name": "ui-ux-architect",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Multi-identity UI/UX design system for Antonio Naylor. Modern Architect (personal) and Reliance Architecture (firm) identities plus a template for new brands. Five named agents (Adoette, Aditsan, Atsila, Aiyana, Anaba) handle critique, component generation, project kickoff, and accessibility auditing across dashboards, mobile/web apps, wikis, and AEC plugins.",
   "homepage": "https://github.com/agnaylor/ui-ux-architect",
   "repository": "https://github.com/agnaylor/ui-ux-architect",

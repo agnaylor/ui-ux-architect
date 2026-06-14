@@ -170,6 +170,40 @@ public partial class PluginWindow : Window
 
 ---
 
+## 5. Crisis / Emergency Interfaces
+
+> Life-safety tools used by a possibly-panicking, possibly-untrained person under acute stress — emergency info kiosks, first-aid / disaster guides, SOS flows. **Design for a far less capable user than the one who set it up.** This platform legitimately overrides several identity defaults — log each override.
+
+### Panic Cognition → Hard Rules
+- **One dominant action per screen.** Working memory collapses under stress — never make the user hold a value, code, or step across screens.
+- **Recognition, never recall.** Plain-word tiles; no typing, no search, no memorized gestures to start.
+- **Cap choices (Hick's Law under arousal):** ≤ 7 top categories; ≤ 3 options per sub-screen.
+- **Serial single-step disclosure.** One instruction card + a single `Next`. Never a scrollable wall of steps.
+- **Imperative, verb-first, ≤ 7 words, ~5th-grade reading level, icon-paired.** "Press hard on the cut." not "If bleeding continues, consider applying pressure."
+- **Two fixed anchors on every screen, forever:** the call-for-help action + Home. Same place, same label, never scroll away.
+- **Never dead-end; degrade, never blank.** Works fully offline; every error / empty / done screen offers a forward action + Home + the help action. Failure is a *designed screen*, not a traceback.
+
+### Color Strategy
+- Active identity palette, with ONE exception: the call-for-help control is **High-Contrast Crimson, always** — the single element allowed to break Quiet Luxury restraint.
+- **Color never carries meaning alone** — color + icon + word (acute stress narrows color perception).
+- **Prefer AAA (≥ 7:1 body) over AA** where feasible — exceed the floor.
+
+### Covenant Exceptions (override identity defaults — log them)
+- **Type scale far above the identity body** — ≥ 20px (phone) / ≥ 30px (on-device screen). Panic legibility + viewing distance beat Quiet-Luxury restraint.
+- **Touch / click targets ≥ 56–64px** — exceeds the 44px floor; correct for shaking hands.
+- **The help action is the loudest element on screen** — one tap, no confirmation, never demoted to match the brand.
+- **Functional sustained animation is allowed** — a CPR metronome, a live countdown — it *paces an action*, not decoration; exempt from the < 200ms rule.
+- **Dark-by-default is acceptable on an on-device screen** for night / power-outage safety, even when the identity is light-first.
+
+### Killer Anti-Patterns
+- Burying the call-for-help action, or any tap-count to reach it.
+- A confirmation dialog in front of the emergency action.
+- Spinners with no words; blank or error screens with nothing to tap.
+- Demoting the emergency control to fit the quiet palette.
+- A multi-field form or a search box as the entry path.
+
+---
+
 ## Decision Flowchart
 
 ```
@@ -177,6 +211,7 @@ Is the surface for monitoring system state?       → Dashboard
 Is it a phone-first or thumb-first experience?    → Mobile/Web
 Is it primarily text/long-form reading?           → Wiki/Notebook
 Is it a plugin or tool inside another desktop app?→ Desktop/AEC
+Is it a life-safety tool for a panicking user?    → Crisis/Emergency
 ```
 
 If two apply (e.g., a mobile dashboard), the **input modality wins** — mobile blueprint governs touch + thumb zone, dashboard blueprint governs data density.

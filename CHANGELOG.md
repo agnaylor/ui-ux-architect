@@ -3,6 +3,15 @@
 All notable changes to ui-ux-architect are recorded here.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] — 2026-06-14
+
+### Added
+- **Crisis / Emergency platform blueprint** (`platform-blueprints.md` §5) — panic-state UX for life-safety tools used by a possibly-panicking, untrained person: one-action-per-screen, recognition-over-recall, ≤7 categories, serial single-step disclosure, two fixed anchors (call-for-help + Home), never-dead-end / degrade-never-blank. Includes an explicit **Covenant Exceptions** block (large type, ≥56–64px targets, a loud always-Crimson help action, functional sustained animation like a CPR metronome, dark-by-default on-device) so the platform can legitimately override identity defaults — each logged.
+- `Crisis-Emergency` registered as a recognized platform in Adoette (Universal Rule 7 + Standard Workflow step 1) and in Aditsan's covenant pass (step 1).
+
+### Notes
+- Distilled from a 5-thread panic-UX research pass (acute-stress cognition, crisis-UX patterns, emergency info hierarchy, accessibility, calm-kiosk) and proven on a real offline emergency-node build.
+
 ## [0.2.1] — 2026-06-13
 
 ### Changed

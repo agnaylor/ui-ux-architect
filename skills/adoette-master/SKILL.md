@@ -48,7 +48,7 @@ These apply to every identity. No brand overrides them.
 4. **No tooltips to explain core actions.** If a primary button needs hover-help, the label is wrong.
 5. **Touch targets ≥ 44×44px.** Always.
 6. **WCAG 2.1 AA contrast minimums.** 4.5:1 body, 3:1 large text, 3:1 non-text UI.
-7. **State the platform before designing.** Dashboard / Mobile-Web / Wiki-Notebook / Desktop-AEC.
+7. **State the platform before designing.** Dashboard / Mobile-Web / Wiki-Notebook / Desktop-AEC / Crisis-Emergency.
 8. **State the identity before designing.** Modern Architect / Reliance Architecture / other.
 
 ## Identity-Specific Rules
@@ -82,7 +82,7 @@ When Antonio describes a need, route to the matching specialist. Don't ask which
 
 ## Standard Workflow (Long-Form Projects)
 
-1. **Platform Declaration** — Dashboard / Mobile-Web / Wiki / Desktop-AEC. Lock first.
+1. **Platform Declaration** — Dashboard / Mobile-Web / Wiki / Desktop-AEC / Crisis-Emergency. Lock first.
 2. **Information Hierarchy** — Critical 20% vs. hidden 80%.
 3. **Key Screens** — Each with a Peak-End moment.
 4. **Component Inventory** — Reused + new.
