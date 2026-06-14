@@ -2,6 +2,8 @@
 
 > Multi-identity UI/UX design system for Antonio Naylor.
 > A portable Claude Code + Cowork plugin. Two production identities, a template for more, five named agents handling the full UI/UX workflow.
+>
+> **Canonical source:** https://github.com/agnaylor/ui-ux-architect
 
 ## What This Plugin Does
 
@@ -28,17 +30,35 @@ Adoette selects the active identity at session start based on project context. S
 
 ## Installation
 
-### Claude Code (any machine)
+### Claude Code — recommended (any machine)
+
+Inside any Claude Code session:
+
+```
+/plugin marketplace add https://github.com/agnaylor/ui-ux-architect.git
+/plugin install ui-ux-architect@architect-tools
+```
+
+Or, with SSH host key already trusted:
+
+```
+/plugin marketplace add agnaylor/ui-ux-architect
+/plugin install ui-ux-architect@architect-tools
+```
+
+### Direct clone (alternative, also auto-discovers)
 
 ```bash
-claude plugin install ./ui-ux-architect.plugin
+git clone https://github.com/agnaylor/ui-ux-architect.git ~/.claude/plugins/architect-tools
 ```
+
+`git pull` in that directory updates the plugin in place.
 
 ### Cowork (desktop app)
 
-Open the `.plugin` file in Cowork → click **Install** in the preview card.
+Drag the `.plugin` archive (from a GitHub Release) onto Cowork → click **Install** in the preview card.
 
-After install, the five skills appear in your session and route automatically.
+After any of the above, the five skills appear in your sessions and route automatically.
 
 ## How to Use
 
@@ -152,7 +172,8 @@ Everything else — colors, type family, radius, borders, motion preferences —
 
 - `0.1.0` — first portable package (Modern Architect only)
 - `0.2.0` — Reliance Architecture identity added, identity template + index, asset bundle
-- Bump version in `.claude-plugin/plugin.json` when shipping changes.
+- `0.2.1` — README install instructions updated to use GitHub marketplace flow; canonical-source URL added
+- Bump version in `.claude-plugin/plugin.json` when shipping changes. See `CHANGELOG.md`.
 
 ## License
 
